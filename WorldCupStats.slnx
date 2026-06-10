@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DataLayer/DataLayer.csproj" />
+  <Project Path="WorldCupStats.WinForms/WorldCupStats.WinForms.csproj" Id="4a62308c-f99a-4e72-aa9e-12d91cdc1ceb" />
+  <Project Path="WorldCupStats.WPF/WorldCupStats.WPF.csproj" />
+</Solution>

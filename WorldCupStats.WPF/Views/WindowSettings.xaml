@@ -1,0 +1,46 @@
+﻿<Window x:Class="WorldCupStats.WPF.Views.WindowSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="320" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        KeyDown="Window_KeyDown">
+
+    <StackPanel Margin="30">
+        <TextBlock Text="World Cup Statistics" 
+                   FontSize="18" FontWeight="Bold"
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,20"/>
+
+        <TextBlock Text="Championship:" Margin="0,0,0,5"/>
+        <ComboBox x:Name="cmbChampionship" Margin="0,0,0,15" Height="30">
+            <ComboBoxItem Content="Men 2018"/>
+            <ComboBoxItem Content="Women 2019"/>
+        </ComboBox>
+
+        <TextBlock Text="Language:" Margin="0,0,0,5"/>
+        <ComboBox x:Name="cmbLanguage" Margin="0,0,0,15" Height="30">
+            <ComboBoxItem Content="English"/>
+            <ComboBoxItem Content="Hrvatski"/>
+        </ComboBox>
+
+        <TextBlock Text="Window Size:" Margin="0,0,0,5"/>
+        <ComboBox x:Name="cmbResolution" Margin="0,0,0,25" Height="30">
+            <ComboBoxItem Content="Fullscreen"/>
+            <ComboBoxItem Content="1280 x 720"/>
+            <ComboBoxItem Content="1024 x 600"/>
+            <ComboBoxItem Content="800 x 500"/>
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button x:Name="btnConfirm" Content="Confirm (Enter)"
+                    Width="130" Height="35" Margin="0,0,10,0"
+                    Click="BtnConfirm_Click"
+                    Background="#2196F3" Foreground="White"/>
+            <Button x:Name="btnCancel" Content="Cancel (Esc)"
+                    Width="130" Height="35"
+                    Click="BtnCancel_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
